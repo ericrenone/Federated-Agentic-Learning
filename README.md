@@ -1,2 +1,59 @@
-# FEDERATED-ACTIVE-INFERENCE-FAI-FRAMEWORK
-FEDERATED ACTIVE INFERENCE (FAI) FRAMEWORK
+# Federated Active Inference (FAI)
+
+### Distributed Minimization of Variational Free Energy at Scale
+
+## 📌 Project Overview
+
+This repository implements a **Unified Federated Active Inference** framework. It bridges the gap between **Theoretical Neuroscience (The Free Energy Principle)** and **Distributed Machine Learning (Federated Learning)**.
+
+The simulation features **1,000 decentralized agents** that collaboratively optimize a shared generative model. Unlike standard Federated Learning which minimizes frequentist loss, this system minimizes **Variational Free Energy (VFE)**, allowing agents to balance sensory accuracy with model complexity.
+
+---
+
+## 🧬 Core Concepts
+
+### 1. Active Inference & Belief Updating
+
+Each agent functions as a variational inference engine. It maintains internal beliefs about hidden environmental states and updates them to minimize "surprise" (Free Energy).
+
+* **Complexity:** The  divergence between the agent's posterior and its prior beliefs.
+* **Accuracy:** The expected log-likelihood of observations given the current model parameters.
+
+### 2. Bayesian Model Reduction
+
+Agents are capable of **structural learning**. As the global model stabilizes, agents evaluate whether a "Complex" or "Simple" prior better minimizes their local Free Energy, favoring simplicity when environmental uncertainty is low.
+
+### 3. Federated Aggregation (FedAvg)
+
+Nodes compute gradients of their local Free Energy functionals and transmit weight updates to a global server. The server aggregates these into a **Global Likelihood Matrix ()**, which is then redistributed to all agents.
+
+---
+
+## 🚀 Features
+
+* **Large Scale:** Simulated environment with **1,000 nodes** and **100 training rounds**.
+* **Real-time Visualization:** Integrated Matplotlib dashboard showing:
+* **VFE Convergence:** The downward trajectory of population surprise.
+* **Model Drift:** The stabilization of the global parameter manifold.
+* **Model Adoption:** The phase transition from complex to simple internal models.
+
+
+* **Robust Engine:** Pure Python implementation of variational math (Softmax, KL-Divergence) with numerical stability protections.
+
+
+## 📊 Dashboard Metrics
+
+| Metric | Description | Scientific Significance |
+| --- | --- | --- |
+| **Avg Free Energy** | Collective surprise across the population. | Measures the "fit" of the global generative model. |
+| **Global Drift** | Magnitude of change in the Likelihood Matrix. | Indicates convergence to a "Consensus Reality." |
+| **Simple Model Ratio** | Percentage of agents utilizing reduced priors. | Demonstrates Occam's Razor in a variational setting. |
+
+---
+
+## 🔬 Mathematical Implementation
+
+The core objective function minimized by the network is defined as:
+
+Where  represents the global weights defining the observation likelihoods shared across the federated network.
+
