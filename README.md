@@ -2,15 +2,15 @@
 
 ### Distributed Minimization of Variational Free Energy at Scale
 
-## 📌 Project Overview
+## Project Overview
 
-This repository implements a **Unified Federated Active Inference** framework. It bridges the gap between **Theoretical Neuroscience (The Free Energy Principle)** and **Distributed Machine Learning (Federated Learning)**.
+This repository implements a **Federated Active Inference** framework. It bridges the gap between **Theoretical Neuroscience (The Free Energy Principle)** and **Distributed Machine Learning (Federated Learning)**.
 
 The simulation features **1,000 decentralized agents** that collaboratively optimize a shared generative model. Unlike standard Federated Learning which minimizes frequentist loss, this system minimizes **Variational Free Energy (VFE)**, allowing agents to balance sensory accuracy with model complexity.
 
 ---
 
-## 🧬 Core Concepts
+## Core 
 
 ### 1. Active Inference & Belief Updating
 
@@ -29,7 +29,7 @@ Nodes compute gradients of their local Free Energy functionals and transmit weig
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Large Scale:** Simulated environment with **1,000 nodes** and **100 training rounds**.
 * **Real-time Visualization:** Integrated Matplotlib dashboard showing:
@@ -41,7 +41,7 @@ Nodes compute gradients of their local Free Energy functionals and transmit weig
 * **Robust Engine:** Pure Python implementation of variational math (Softmax, KL-Divergence) with numerical stability protections.
 
 
-## 📊 Dashboard Metrics
+## Dashboard Metrics
 
 | Metric | Description | Scientific Significance |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Nodes compute gradients of their local Free Energy functionals and transmit weig
 
 ---
 
-## 🔬 Mathematical Implementation
+## Mathematical Implementation
 
 The core objective function minimized by the network is defined as:
 
