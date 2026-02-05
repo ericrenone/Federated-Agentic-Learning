@@ -31,6 +31,8 @@ Local variational objectives induce coherent global learning.
 
 ---
 
+We demonstrate that federated populations of active inference agents self-organize toward accurate, low-complexity generative models solely through variational free-energy minimization, inducing convergence, structural simplification, and global coordination without centralized supervision.
+
 ## Features
 
 * **Large Scale:** Simulated environment with **1,000 nodes** and **100 training rounds**.
