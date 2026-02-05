@@ -22,10 +22,12 @@ Each agent functions as a variational inference engine. It maintains internal be
 ### 2. Bayesian Model Reduction
 
 Agents are capable of **structural learning**. As the global model stabilizes, agents evaluate whether a "Complex" or "Simple" prior better minimizes their local Free Energy, favoring simplicity when environmental uncertainty is low.
+Model compression is an emergent property of Bayesian inference — not a heuristic.
 
 ### 3. Federated Aggregation (FedAvg)
 
 Nodes compute gradients of their local Free Energy functionals and transmit weight updates to a global server. The server aggregates these into a **Global Likelihood Matrix ()**, which is then redistributed to all agents.
+Local variational objectives induce coherent global learning.
 
 ---
 
