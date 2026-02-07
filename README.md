@@ -47,7 +47,3 @@ The framework includes a high-speed telemetry suite (Matplotlib & ASCII) to trac
 
 
 
-
-### Installation
-```bash
-pip install matplotlib torch transformers
